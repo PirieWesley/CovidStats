@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button fill="" color="medium" slot="end" icon-only shape="round" (click)="dismiss()">
+      <ion-icon name="close"></ion-icon>
+    </ion-button>
+    <ion-title>{{country['Country,Other']}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <!-- <ion-icon name="pin" slot="start"></ion-icon> -->
+      <ion-label>Total Cases</ion-label>
+    </ion-item>
+    <ion-card-content>
+      <ion-text>
+        <p>Total Infected: {{country['TotalCases']}}</p>
+        <p>Total Deaths: {{country['TotalDeaths']}}</p>
+        <p>Total Recovered: {{country['TotalRecovered']}}</p>
+      </ion-text>
+    </ion-card-content>
+    
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <!-- <ion-icon name="pin" slot="start"></ion-icon> -->
+      <ion-label>Active Cases</ion-label>
+    </ion-item>
+    <ion-card-content>
+      <ion-text>
+        <p>Currently Infected: {{country['ActiveCases']}}</p>
+        <p>Serious Cases: {{country['Serious,Critical']}}</p>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-label>New Cases</ion-label>
+    </ion-item>
+    <ion-card-content>
+      <ion-text>
+        <p>New Cases: {{country['NewCases']}}</p>
+        <p>New Deaths: {{country['NewDeaths']}}</p>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<!-- // ActiveCases: "7,263"
+// "Country,Other": "China"
+// NewCases: "+34"
+// NewDeaths: "+8"
+// "Serious,Critical": "2,274"
+// TotalCases: "80,928"
+// TotalDeaths: "3,245"
+// TotalRecovered: "70,420"
+// "Tot Cases/1M pop": "56"
+// id: 130 -->
